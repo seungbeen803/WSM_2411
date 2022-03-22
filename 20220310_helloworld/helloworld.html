@@ -5,15 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>헬로, 월드!</title>
+    <style>
+        <!-- 우선순위: TAG < class < id  <<< !important -->
+        <!-- 우선순위: 같은 급일 때는 위 < 아래 쓴 코드 -->
+        /* css태그 주석 */
+        /* 선택자 -> selector, 속성 -> property, 값 -> value*/
+        li {
+            color: teal;
+        }
+        
+        .korea {
+            color: crimson !important;
+        }
+        
+        .Goyang {
+            color: darkblue;
+        }
+
+        #leader {
+            color: violet;
+        }
+    </style>
 </head>
 <body>
+    <!-- html 주석 -->
     <ul>
         <!-- ctrl + alt + 아래 버튼 => 여러 개 드래그-->
         <li class="korea" id="leader">셔누</li>
         <li class="korea">민혁</li>
-        <li class="korea" id="Goyang">기현</li>
-        <li class="korea">형원</li>
-        <li class="korea">주헌</li>
+        <li class="korea Goyang">기현</li>
+        <li class="korea" >형원</li>
+        <li class="korea" style="color: orangered">주헌</li>
         <li class="korea">창균</li>
     </ul>
     <ul>
