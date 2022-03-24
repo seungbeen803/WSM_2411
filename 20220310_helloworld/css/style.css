@@ -3,30 +3,40 @@
 /* 우선순위: 같은 급일 때는 위 < 아래 쓴 코드 */
 /* css태그 주석 */
 /* 선택자 -> selector, 속성 -> property, 값 -> value*/
- li {
-     color: teal;
+
+/* 꺾인 괄호는 내 바로 밑에 자식에게만 적용된다 */
+body > li {
+  /* >: 자식, 띄어쓰기: 자손 */
+  color: teal;
 }
-        
-.korea {
-    color: crimson !important;
-}
-        
+
 .Goyang {
-    color: darkblue;
+  color: darkblue;
+}
+
+.korea,
+h6 {
+  /* 콤마: 함께 */
+  /* !important는 같은 속성을 여러 번 정의했을 때, 나중에 설정한 값이 적용됩니다. */
+  /* 나중에 설정한 값이 적용되지 않게 하려면 속성 값 뒤에 !important를 붙입니다. */
+  color: crimson !important;
 }
 
 #leader {
-    color: violet;
+  color: violet;
 }
 
-li:nth-child(6) { /* 1부터 시작 */
-    text-decoration: underline;
+li:nth-child(6) {
+  /* 1부터 시작 */
+  text-decoration: underline;
 }
 
-h2+h3 { /* h2자매(형제) 중 첫 번째 h3 */
-    background-color: skyblue;
+h2 + h3 {
+  /* h2자매(형제) 중 첫 번째 h3 */
+  background-color: skyblue;
 }
 
-h2~h3 { /* h3자매(형제) 중 여러 h3 */
-    font-size: 40px;
+h2 ~ h3 {
+  /* h3자매(형제) 중 여러 h3 */
+  font-size: 40px;
 }
