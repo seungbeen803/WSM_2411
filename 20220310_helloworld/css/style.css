@@ -19,7 +19,7 @@ h6 {
   /* 콤마: 함께 */
   /* !important는 같은 속성을 여러 번 정의했을 때, 나중에 설정한 값이 적용됩니다. */
   /* 나중에 설정한 값이 적용되지 않게 하려면 속성 값 뒤에 !important를 붙입니다. */
-  color: crimson !important;
+  color: darkblue !important;
 }
 
 #leader {
@@ -40,3 +40,12 @@ h2 ~ h3 {
   /* h3자매(형제) 중 여러 h3 */
   font-size: 40px;
 }
+
+body > ul > ul:nth-child(2) {
+  /* 찾는 요소 우클릭 > 검사(F12) > 개발자도구 > 우클릭 > Copy > Copy selector */
+  background-color: hotpink;
+}
+
+/* body > ul > ul:nth-child(2) > li:nth-child(2) {
+  background-color: lightgoldenrodyellow;
+} */
