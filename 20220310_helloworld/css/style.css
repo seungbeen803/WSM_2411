@@ -1,3 +1,4 @@
+/* 포괄 < 구체*/
 /* 우선순위: TAG < class < id  <<< !important */
 /* 우선순위: 같은 급일 때는 위 < 아래 쓴 코드 */
 /* css태그 주석 */
@@ -22,10 +23,10 @@ li:nth-child(6) { /* 1부터 시작 */
     text-decoration: underline;
 }
 
-h2+h3 { /* h2형제 중 첫 번째 h3 */
+h2+h3 { /* h2자매(형제) 중 첫 번째 h3 */
     background-color: skyblue;
 }
 
-h2~h3 { /* h3형제 중 여러 h3 */
+h2~h3 { /* h3자매(형제) 중 여러 h3 */
     font-size: 40px;
 }
