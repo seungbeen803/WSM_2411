@@ -3,10 +3,11 @@
 /* 우선순위: 같은 급일 때는 위 < 아래 쓴 코드 */
 /* css태그 주석 */
 /* 선택자 -> selector, 속성 -> property, 값 -> value*/
+/* TAG -> *, class -> .class, id -> #id(우선순위가 적은게 크다), !important(우선순의가 제일 큼)*/
 
 /* 꺾인 괄호는 내 바로 밑에 자식에게만 적용된다 */
 body > li {
-  /* >: 자식, 띄어쓰기: 자손 */
+  /* > (세세하게 들어갈 때): 자식, 띄어쓰기(일반 코딩): 자손 */
   color: teal;
 }
 
@@ -28,6 +29,9 @@ h6 {
 
 li:nth-child(6) {
   /* 1부터 시작 */
+  /* nth-child(n) : n번째 자식 */
+  /* first-child : 첫째 자식 */
+  /* last-child : 막내 자식 */
   text-decoration: underline;
 }
 
@@ -49,3 +53,8 @@ body > ul > ul:nth-child(2) {
 /* body > ul > ul:nth-child(2) > li:nth-child(2) {
   background-color: lightgoldenrodyellow;
 } */
+
+body > ul > ul > li:nth-child(3) {
+  text-decoration: underline;
+}
+/* ul ol하기 */
