@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헬로, 월드!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- html 주석 -->
+    <ul>
+        <li>MONSTAX</li>
+        <ul>
+        <!-- ctrl + alt + 아래 버튼 => 여러 개 드래그-->
+            <li class="korea" id="leader">셔누</li>
+            <li class="korea">민혁</li>
+            <li class="korea Goyang">기현</li>
+            <li class="korea" >형원</li>
+            <li class="korea" style="color: orangered">주헌</li>
+            <li class="korea">창균</li>
+        </ul>
+        <li>방탄소년단</li>
+        <ul>
+            <li>RM</li>
+            <li>진</li>
+            <li>SUGA</li>
+            <li>J-HOPE</li>
+            <li>지민</li>
+            <li>V</li>
+            <li>정국</li>
+        </ul>
+    </ul>
+    <img src="https://dynamicmedia.livenationinternational.com/Media/i/w/j/04d94a22-c1b4-4f81-8823-1e79512c689b.jpg" alt="">
+    <!--드래그 + shift + alt + 아래 버튼 => 복사 -->
+    <h1>Hello, World!</h1>
+    <h2>Hello, World!</h2>
+    <h3>Hello, World!</h3>
+    <h4>Hello, World!</h4>
+    <h5>Hello, World!</h5>
+    <h6>Hello, World!</h6>
+    <h5>Hello, World!</h5>
+    <h4>Hello, World!</h4>
+    <h3>Hello, World!</h3>
+    <h2>Hello, World!</h2>
+    <h1>Hello, World!</h1>
+</body>
+</html>

@@ -6,7 +6,7 @@
 /* TAG -> *, class -> .class, id -> #id(우선순위가 적은게 크다), !important(우선순의가 제일 큼)*/
 
 /* 꺾인 괄호는 내 바로 밑에 자식에게만 적용된다 */
-body > li {
+body>li {
   /* > (세세하게 들어갈 때): 자식, 띄어쓰기(일반 코딩): 자손 */
   color: teal;
 }
@@ -17,7 +17,7 @@ body > li {
 
 .korea,
 h6 {
-  /* 콤마: 함께 */
+  /* 콤마: 따로따로 */
   /* !important는 같은 속성을 여러 번 정의했을 때, 나중에 설정한 값이 적용됩니다. */
   /* 나중에 설정한 값이 적용되지 않게 하려면 속성 값 뒤에 !important를 붙입니다. */
   color: darkblue !important;
@@ -35,17 +35,17 @@ li:nth-child(6) {
   text-decoration: underline;
 }
 
-h2 + h3 {
+h2+h3 {
   /* h2자매(형제) 중 첫 번째 h3 */
   background-color: skyblue;
 }
 
-h2 ~ h3 {
+h2~h3 {
   /* h3자매(형제) 중 여러 h3 */
   font-size: 40px;
 }
 
-body > ul > ul:nth-child(2) {
+body>ul>ul:nth-child(2) {
   /* 찾는 요소 우클릭 > 검사(F12) > 개발자도구 > 우클릭 > Copy > Copy selector */
   background-color: hotpink;
 }
@@ -54,7 +54,8 @@ body > ul > ul:nth-child(2) {
   background-color: lightgoldenrodyellow;
 } */
 
-body > ul > ul > li:nth-child(3) {
+body>ul>ul>li:nth-child(3) {
   text-decoration: underline;
 }
+
 /* ul ol하기 */
