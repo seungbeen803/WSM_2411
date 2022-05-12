@@ -1,0 +1,110 @@
+flex-direction : 방향
+justify-content : 메인 축의 배치
+align-items : 교차축의 배치
+order : 자기자리에서 순서 변경
+align-self : 그 아이템 교차축의 배치
+flex-wrap : 내려쓰기
+flex-flow : flex direction flex-wrap
+align-content : 내려썼을 때 교차 축의 배치
+
+
+24단계
+#pond {
+display: flex;
+flxw-direction: column-reverse;
+flex-wrap: wrap-reverse;
+align-content: space-between;
+justify-content: center;
+}
+
+단위
+% : 부모의 %
+vh : viewport의 height
+vw : viewport의 width
+rem : root가 되는 크기 어디서든 16px 2rem = 32px
+em : 부모의 폰트 사이즈를 기준으로 함 16px
+
+justify-content : 메인축 배치
+flex-start: 요소들을 컨테이너의 왼쪽으로 정렬합니다.
+flex-end: 요소들을 컨테이너의 오른쪽으로 정렬합니다.
+center: 요소들을 컨테이너의 가운데로 정렬합니다.
+space-between: 요소들 사이에 동일한 간격을 둡니다.
+space-around: 요소들 주위에 동일한 간격을 둡니다.
+
+align-items : 교차축 배치
+flex-start: 요소들을 컨테이너의 꼭대기로 정렬합니다.
+flex-end: 요소들을 컨테이너의 바닥으로 정렬합니다.
+center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다.
+stretch: 요소들을 컨테이너에 맞도록 늘립니다.
+
+flex-direction : 메인축 방향
+row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.
+column: 요소들을 위에서 아래로 정렬합니다.
+column-reverse: 요소들을 아래에서 위로 정렬합니다.
+
+flex-wrap : 내려쓰기
+nowrap: 모든 요소들을 한 줄에 정렬합니다.
+wrap: 요소들을 여러 줄에 걸쳐 정렬합니다.
+wrap-reverse: 요소들을 여러 줄에 걸쳐 반대로 정렬합니다.
+
+align-content: 2줄 이상 내려쓰기
+flex-start: 여러 줄들을 컨테이너의 꼭대기에 정렬합니다.
+flex-end: 여러 줄들을 컨테이너의 바닥에 정렬합니다.
+center: 여러 줄들을 세로선 상의 가운데에 정렬합니다.
+space-between: 여러 줄들 사이에 동일한 간격을 둡니다.
+space-around: 여러 줄들 주위에 동일한 간격을 둡니다.
+stretch: 여러 줄들을 컨테이너에 맞도록 늘립니다.
+
+order : 순서
+align-self : 개별 요소 
+flex-flow flex-dirextion flex-flow
+
+----------------------------------------------------------------
+
+justify-content(메인축 배치)
+flex-start: 요소들을 컨테이너의 왼쪽으로 정렬
+flex-end: 요소들을 컨테이너의 오른쪽으로 정렬
+center: 요소들을 컨테이너의 가운데로 정렬
+space-between: 요소들 사이에 동일한 간격을 둠
+space-around: 요소들 주위에 동일한 간격을 둠
+→space-around는 잘 사용하지 않는다. 주로 space-between과 space-evenly를 사용함.
+
+align-items(교차축 배치)
+flex-start: 요소들을 컨테이너의 꼭대기로 정렬
+flex-end: 요소들을 컨테이너의 바닥으로 정렬
+center: 요소들을 컨테이너의 세로선 상의 가운데로 정렬
+baseline: 요소들을 컨테이너의 시작 위치에 정렬
+stretch: 요소들을 컨테이너에 맞도록 늘림
+
+flex-direction(메인축 방향)
+row: 요소들을 텍스트의 방향과 동일하게 정렬
+row-reverse: 요소들을 텍스트의 반대 방향으로 정렬
+column: 요소들을 위에서 아래로 정렬
+column-reverse: 요소들을 아래에서 위로 정렬
+
+order
+기본 값은 0이다.
+양수나 음수로 바꿀 수 있다.
+정수만 된다.
+→순서를 바꾸는 경우는 많이 있지 않아, 잘 사용하지 않음.
+
+align-self(개별 요소)
+: align-items가 사용하는 값들을 인자로 받으며, 그 값들은 지정한 요소에만 적용됨.
+
+flex-wrap
+nowrap: 모든 요소들을 한 줄에 정렬.
+wrap: 요소들을 여러 줄에 걸쳐 정렬
+wrap-reverse: 요소들을 여러 줄에 걸쳐 반대로 정렬
+
+flex-flow
+: 자주 같이 사용되는 flex-direction과 flex-wrap를 한 번에 사용하고 싶으면, flex-flow를 사용하면 된다.
+
+align-content
+flex-start: 여러 줄들을 컨테이너의 꼭대기에 정렬
+flex-end: 여러 줄들을 컨테이너의 바닥에 정렬
+center: 여러 줄들을 세로선 상의 가운데에 정렬
+space-between: 여러 줄들 사이에 동일한 간격을 둠
+space-around: 여러 줄들 주위에 동일한 간격을 둠
+stretch: 여러 줄들을 컨테이너에 맞도록 늘림
