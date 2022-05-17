@@ -1,1 +1,15 @@
 /* css.stlye.css로 파일 만들기 */
+:root {
+    /* 변수 앞에 -- 작성하기 */
+    --red: crimson;
+    --yellow: gold;
+    --green: yellowgreen;
+}
+
+* {
+    box-sizing: border-box; /* 크기 계산의 기준을 contents -> border */
+    /* 바깥의 여백 */
+    margin: 0;
+    /* 안의 여백 */
+    padding: 0;
+}
