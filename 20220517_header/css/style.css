@@ -31,9 +31,18 @@ header {
 }
 
 .nav-list {
+    display: flex;
+    /* gap: ; 사이 틈 */
+    gap: 16px;
     border: var(--border-width) solid var(--yellow)
 }
 
 .nav-list li {
     border: var(--border-width) solid var(--green)
 }
+
+/* .nav-list li {
+    flex-grow는 0,1 비율
+    flex-grow: 1;
+    flex-shrink: 0;
+} */

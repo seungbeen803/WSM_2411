@@ -1,0 +1,33 @@
+/* flex-grow */
+/* .nav-list li {
+    flex-grow: 1;
+} */
+
+/* .nav-list li:nth-child(2){
+    background-color: rgb(252, 164, 252);
+	flex-grow: 4;
+}
+
+.nav-list li:nth-child(4){
+    background-color: rgb(252, 164, 252);
+	flex-grow: 1;
+} */
+
+/* flex-basis */
+.nav-list li {
+    flex-basis: 200px;
+}
+
+/* flex-shrink */
+.nav-list li:nth-child(2){
+    background-color: rgb(252, 164, 252);
+	flex-shrink: 0;
+    width: 100px;
+}
+
+/* .nav-list li {
+    flex: 1 1 200px;
+} */
+
+
+
