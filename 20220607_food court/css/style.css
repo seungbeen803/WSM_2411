@@ -62,8 +62,31 @@ img {
 
 /* nav */
 .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.875rem;
+    margin-right: 0.875rem;
+}
+header {
+    background-color: var(--first-color);
+}
+nav {
+    height: 44px;
+    display: flex; /* 기본값: 수평 방향 */
+    justify-content: space-between; /* 양쪽 정렬 */
+    align-items: center; /* 교차축(수직의) 가운데 */
+}
+nav i {
+    color: #fff;
+    font-size: var(--h3-font-size);
+}
+.nav-toggle {
+    display: none; /* 안 보이게 하자 */
+}
+.nav-list {
+    display: flex; /* 기본값: 수평 방향 */
+    column-gap: 1.25rem; /* 20px */
+}
+.nav-link {
+    color: #fff;
 }
 /* breakpoints */
 
