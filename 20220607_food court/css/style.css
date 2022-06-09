@@ -115,6 +115,7 @@ nav i {
     }
     .nav-link {
         color: var(--title-color);
+        display: block; /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자*/
     }
     .nav-item {
         /* 1개 사용하면 전부 적용 */
