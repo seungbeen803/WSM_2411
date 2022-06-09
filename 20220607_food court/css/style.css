@@ -70,9 +70,9 @@ header {
 }
 nav {
     height: 44px;
-    display: flex; /* 기본값: 수평 방향 */
-    justify-content: space-between; /* 양쪽 정렬 */
-    align-items: center; /* 교차축(수직의) 가운데 */
+    display: flex;      /* 기본값: 수평 방향 */
+    justify-content: space-between;     /* 양쪽 정렬 */
+    align-items: center;    /* 교차축(수직의) 가운데 */
 }
 nav i {
     color: #fff;
@@ -93,5 +93,37 @@ nav i {
 /* 2K & 4K */
 
 /* tablet */
+/* 특정 너비 */
+/* width가 600px 이하면 아래 css 적용 */
+@media screen and (max-width: 600px){
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute; /* 위치 무시. 로고 가운데 정렬 */
+    }
+    .nav-logo {
+        margin: 0 auto; /* 로고 가운데 정렬 */
+    }
+    .nav-list {
+        position: absolute;
+        top: 44px;
+        left: 0;
+        /* width: 100%; */
+        right: 0;
+        flex-direction: column;
+        background-color: lightgray;
+    }
+    .nav-link {
+        color: var(--title-color);
+    }
+    .nav-item {
+        /* 1개 사용하면 전부 적용 */
+        /* 2개 사용하면 12시부터 시계 방향이다 위 오른 아래 왼 */
+        /* 3개 사용하면 위 양옆 아래 */
+        padding: .5rem 1rem; /* 위 오 아 왼 */
+        text-align: center; /* 가운데 정렬 */
+        border-bottom: 1px solid white;
+    }
 
+}
 /* mobile */
