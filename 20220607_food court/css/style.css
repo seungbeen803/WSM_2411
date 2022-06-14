@@ -113,10 +113,6 @@ nav i {
         flex-direction: column;
         background-color: lightgray;
     }
-    .nav-link {
-        color: var(--title-color);
-        display: block; /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자*/
-    }
     .nav-item {
         /* 1개 사용하면 전부 적용 */
         /* 2개 사용하면 12시부터 시계 방향이다 위 오른 아래 왼 */
@@ -124,6 +120,10 @@ nav i {
         padding: .5rem 1rem; /* 위 오 아 왼 */
         text-align: center; /* 가운데 정렬 */
         border-bottom: 1px solid white;
+    }
+    .nav-link {
+        color: var(--title-color);
+        display: block; /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자*/
     }
 
 }
