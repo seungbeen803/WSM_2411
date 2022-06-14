@@ -1,15 +1,12 @@
 //toggle hidden menu
-const toggleMenu = function (toggleId, navListId) {
+const toggleMenu = (toggleId, navListId) => {
     // html의 id를 자바스크립트로 가져오는 함수
     const toggle = document.getElementById(toggleId);
-    const navList = document.getElementById(navListId);
-
-    const clickHandler = function () {
-        navList.classList.toggle('show-menu'); // add: 추가, remove: 제거, toggle: 추가/제거 번갈아가면서 한다
-    }
+    const navList = document.getElementById(navListId); 
 
     if(toggle && navList) {
-        toggle.addEventListener('click', clickHandler);
+        // add: 추가, remove: 제거, toggle: 추가/제거 번갈아가면서 한다
+        toggle.addEventListener('click', () => navList.classList.toggle('show-menu'));
     }
 }
 toggleMenu('nav-toggle', 'nav-list');
