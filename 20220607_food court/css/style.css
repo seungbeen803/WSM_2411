@@ -79,7 +79,7 @@ nav i {
     font-size: var(--h3-font-size);
 }
 .nav-toggle {
-    display: none; /* 안 보이게 하자 */
+    display: none; /* 안 보이게 하자 시험 */
 }
 .nav-list {
     display: flex; /* 기본값: 수평 방향 */
@@ -107,8 +107,8 @@ nav i {
     .nav-list {
         position: absolute;
         top: 44px;
-        left: 0;
         /* width: 100%; */
+        left: 0;
         right: 0;
         flex-direction: column;
         background-color: lightgray;
