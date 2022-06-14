@@ -2,11 +2,19 @@
 const toggleMenu = (toggleId, navListId) => {
     // html의 id를 자바스크립트로 가져오는 함수
     const toggle = document.getElementById(toggleId);
-    const navList = document.getElementById(navListId); 
+    const navList = document.getElementById(navListId);
+    const toggleIcon = document.getElementsByTagName('i')[0];
 
     if(toggle && navList) {
         // add: 추가, remove: 제거, toggle: 추가/제거 번갈아가면서 한다
-        toggle.addEventListener('click', () => navList.classList.toggle('show-menu'));
+        toggle.addEventListener('click', () => {
+            // toggle menu
+            navList.classList.toggle('show-menu');
+            // change toggle icon: bx-menu <-> bx bx-x-circle
+            toggleIcon.classList.toggle('bx-menu');
+            toggleIcon.classList.toggle('bx-x-circle');
+
+        });
     }
 }
 toggleMenu('nav-toggle', 'nav-list');
