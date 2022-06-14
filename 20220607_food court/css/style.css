@@ -112,6 +112,11 @@ nav i {
         right: 0;
         flex-direction: column;
         background-color: lightgray;
+        /* 중요 height 0과 overflow를 같이 사용해야 보이지 않게된다 */
+        height: 0;
+        /* overflow : 넘치다 */
+        overflow: hidden;
+        transition: .2s;
     }
     .nav-item {
         /* 1개 사용하면 전부 적용 */
@@ -124,6 +129,9 @@ nav i {
     .nav-link {
         color: var(--title-color);
         display: block; /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자*/
+    }
+    .show-menu {
+        height: 164px;
     }
 
 }
