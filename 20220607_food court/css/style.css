@@ -99,7 +99,7 @@ main {
     display: flex; /* card 3개 수평정렬 */
     justify-content: center; /* card 3개 가운데 정렬 */
     column-gap: 60px; /* 열과 열사이 간격 */
-    row-gap: 40px; /* 헹과 행사이 간격 */
+    row-gap: 40px; /* 행과 행사이 간격 */
     flex-wrap: wrap; /* 너비가 좁아지면, 내리자*/
 }
 h3 {
