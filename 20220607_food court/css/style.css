@@ -70,6 +70,7 @@ header {
     position: fixed; /* 스크롤해도 항상 위치 고정 */
     left: 0;
     right: 0;
+    top: 0;
 }
 nav {
     height: 44px;
@@ -90,6 +91,11 @@ nav i {
 }
 .nav-link {
     color: #fff;
+}
+
+/* HOME */
+main {
+    margin: 88px 0 0 0;
 }
 /* breakpoints */
 
