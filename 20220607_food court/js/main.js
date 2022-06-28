@@ -32,3 +32,33 @@ toggleMenu('nav-toggle', 'nav-list');
 /* 화살표 함수 */
 // const say = () => console.log('hello world3');
 // say();
+
+const addNow = (homeCardId) => {
+    // html -> js
+    const homeCard= document.getElementById(homeCardId);
+
+    // 시간 -> index번째 식사가 선택되어야하는지 결정
+    // 조식 끝 : 8:00
+    // 중식 끝 : 13:00
+    // 석식 끝 : 17:50
+    let now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    //console.log(hour, minute); // 14 30
+    minute = hour * 60 + minute;
+    // 단위를 하나로 바꿔서 구한다.
+    if(minute >= 17 * 60 + 50){ // 1070
+        index = 0;
+    }else if(minute >= 13 * 60){
+        index = 2;
+    }else if(minute >= 8 * 60){
+        index = 1;
+    }else{
+        index = 0;
+    }
+    // console.log(index);
+    // homeCard에서 index번째 card에 now클래스 추가
+    let card = homeCard.getElementsByClassName('card')[index];
+    card.classList.add('now');
+}
+addNow('home-card')
